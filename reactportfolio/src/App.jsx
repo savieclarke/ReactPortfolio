@@ -11,18 +11,17 @@ import { useState } from "react";
 
 
 function App() {
-  const [menuOpen, setMenuOpen] = useState(false)
+  const [menuOpen,setMenuOpen] = useState(false)
   return (
-    <div className="App">
-      <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-      <Menu/>
-      <div className="sections">
-        savnb  kjnjhbjhbuu
+    <div className="app">
+     <Header/>
+     <Menu/>
+     <div className="sections">
         <Intro/>
         <Portfolio/>
         <Contact/>
+        <Footer/>
       </div>
-      <Footer/>
     </div>
   );
 }

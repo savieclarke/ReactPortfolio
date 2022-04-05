@@ -3,7 +3,7 @@ import "./menu.scss"
 
 export default function Menu() {
     return(
-        <div className="menu" id="portfolio">
+        <div className="menu" id="menu">
 <ul>
     <li>
         <a href="#intro">Home</a>

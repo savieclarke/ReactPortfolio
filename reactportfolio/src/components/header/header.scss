@@ -3,7 +3,7 @@
 
 .header{
     width: 100%;
-    height: 70px;
+    height: 50px;
     background-color: white;
     color: $mainColor;
     position: fixed;
@@ -46,8 +46,7 @@
         
 }
 
-            .right{
-
+            .right {
                 .hamburger{
                     width: 32px;
                     height: 25px;
@@ -56,7 +55,7 @@
                     justify-content: space-between;
                     cursor: pointer;
 
-                    .span{
+                    .hr {
                         width: 100px;
                         height: 3px;
                         background-color: $mainColor;
@@ -67,17 +66,17 @@
             }
  }
 
- &.active{
+ &.active {
      background-color: $mainColor;
      color: white;
 
-     .hamburger{
-         span{
-             &:first-child{
+     .hamburger {
+         .hr {
+             &:first-child {
                  background-color: white;
                  transform: rotate(45deg);
              }
-             &:nth-child(2){
+             &:nth-child(2) {
                  opacity: 0;
              }
              &:last-child{
@@ -89,3 +88,4 @@
      }
  }
 }
+

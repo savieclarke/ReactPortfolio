@@ -1,8 +1,9 @@
-import "./header.scss"
+import "./header.scss";
 
-export default function Header({ menuOpen, setMenuOpen }) {
+export default function Header() {
     return(
-        <div className="header">
+        <div>
+            <div className="header">
             <div className="wrapper">
                 <div className="left">
                     <a href="#intro" className="logo"> Savannah Clarke</a>
@@ -12,15 +13,15 @@ export default function Header({ menuOpen, setMenuOpen }) {
                 </div>
                     <div className="right">                        
                         <div className="hamburger">
-                            <span className="line1"></span>
-                            <span className="line2"></span>
-                            <span className="line3"></span>
+                            <hr className="line1"></hr>
+                            <hr className="line2"></hr>
+                            <hr className="line3"></hr>
                         </div>
                 </div>
             </div>
 
         </div>
-
+</div>
     );
 
 
