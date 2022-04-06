@@ -9,6 +9,7 @@
     position: fixed;
     top: 0;
     z-index: 2;
+    transistion: all 1s ease;
 
 
     .wrapper{
@@ -26,6 +27,7 @@
                 font-weight: 700;
                 text-decoration: none;
                 color: inherit;
+                margin: right 40px;
             }
 
             .itemContainer{

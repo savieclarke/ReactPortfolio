@@ -2,7 +2,7 @@ import React from "react"
 import { useEffect, useState } from "react";
 import PortfolioList from "../portfolioList/portfolioList";
 import "./portfolio.scss"
-import { employeeTracker, hive, three, four, five, six } from "../../data";
+import { employeeTracker, hive, quiz, schedule, regex, six, pwgsc } from "../../data";
 
 export default function Portfolio() {
     const [selected, setSelected] = useState("employeeTracker");
@@ -18,16 +18,20 @@ export default function Portfolio() {
         title: "Hive App",
     },
        { 
-           id: "mobile",
-        title: "Mobile App",
+           id: "quiz",
+        title: "Quiz App",
     },
     {
-        id: "design",
-        title: "Design",
+        id: "schedule",
+        title: "Schedule App",
     },
     {
-        id: "content",
-        title: "content",
+        id: "pwgsc",
+        title: "Password Generator",
+    },
+    {
+        id: "regex",
+        title: "Regex Tutorial",
     },
        
     ];
@@ -41,17 +45,17 @@ useEffect(() => {
         case "hive":
             setData(hive);
                 break;
-        case "three":
-            setData(three);
+        case "quiz":
+            setData(quiz);
                 break;
-        case "four":
-            setData(four);
+        case "schedule":
+            setData(schedule);
                 break;
-        case "five":
-            setData(five);
+        case "pwgsc":
+            setData(pwgsc);
                 break;
-        case "six":
-            setData(six);
+        case "regex":
+            setData(regex);
             break;
             default: 
     }

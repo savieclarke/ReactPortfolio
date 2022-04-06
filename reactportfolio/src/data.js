@@ -22,45 +22,45 @@ export const hive =[
     },
 ]
 
-export const three = [
+export const quiz = [
 
     {
-        id: 3,
-        title: "3",
-        img: "",
+        id: "quiz",
+        title: "Quiz App",
+        img: "./assets/quizsc.png",
 
 
     },
 ]
 
 
-export const four = [
+export const schedule = [
     {
-        id: 4,
-        title: "4",
-        img: "",
+        id: "schedule",
+        title: "Schedule App",
+        img: "./assets/schedule.png",
 
 
     },
 ]
 
-export const five = [
+export const pwgsc = [
     {
-        id: 5,
-        title: "5",
-        img: "",
+        id: "pwgsc",
+        title: "Password Generator App",
+        img: "./assets/pwgsc.png",
 
 
     },
 
 ]
 
-export const six = [
+export const regex = [
 
     {
-        id: 6,
-        title: "6",
-        img: "",
+        id: "regex",
+        title: "Regex Tutorial",
+        img: "./assets/regex.png",
 
     },
 
