@@ -17,13 +17,13 @@ function App() {
      <Header/>
      <Menu/>
      <div className="sections">
-        <Intro/>nn
+        <Intro/>
+        
         <Portfolio/>
         <Contact/>
-        <Footer/>
       </div>       
        <Footer/>
-bb
+
     </div>
   );
 }

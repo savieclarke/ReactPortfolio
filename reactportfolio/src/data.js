@@ -1,18 +1,22 @@
-export const featured = [
+
+
+
+
+export const employeeTracker = [
     {
-        id: 1,
-        title: "1",
-        img: "",
+        id: "employeeTracker",
+        title: "Employee Tracker",
+        img: "./assets/employeetracker.png",
 
 
     },
 ]
 
-export const two =[
+export const hive =[
     {
-        id: 2,
-        title: "2",
-        img: "",
+        id: "hive",
+        title: "Hive App",
+        img: "./assets/hivesc.png",
 
 
     },

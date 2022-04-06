@@ -2,20 +2,20 @@ import React from "react"
 import { useEffect, useState } from "react";
 import PortfolioList from "../portfolioList/portfolioList";
 import "./portfolio.scss"
-import { featured, two, three, four, five, six } from "../../data";
+import { employeeTracker, hive, three, four, five, six } from "../../data";
 
 export default function Portfolio() {
-    const [selected, setSelected] = useState("featured");
+    const [selected, setSelected] = useState("employeeTracker");
     const [data, setData] = useState([]);
 
     const list =[
         {
-        id: "featured",
-        title: "Featured",
+        id: "employeeTracker",
+        title: "Employee Tracker",
     },
     {
-        id: "web",
-        title: "Web App",
+        id: "hive",
+        title: "Hive App",
     },
        { 
            id: "mobile",
@@ -35,11 +35,11 @@ export default function Portfolio() {
 useEffect(() => {
 
     switch (selected) {
-        case "featured":
-            setData(featured);
+        case "employeeTracker":
+            setData(employeeTracker);
                 break;
-        case "two":
-            setData(two);
+        case "hive":
+            setData(hive);
                 break;
         case "three":
             setData(three);
@@ -53,7 +53,7 @@ useEffect(() => {
         case "six":
             setData(six);
             break;
-            default:
+            default: 
     }
 }, [selected]);
 

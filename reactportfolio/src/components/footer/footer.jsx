@@ -5,7 +5,7 @@ export default function Footer() {
     return(
         <div className="footer" id="footer">
 
-mbm
+<center>Savannah Clarke 2021</center>
         </div>
 
     )

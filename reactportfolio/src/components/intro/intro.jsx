@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from "react"
 import "./intro.scss"
 import { init } from 'ityped'
+import { saveAs } from "file-saver";
+
 
 export default function Intro() {
 
@@ -13,16 +15,27 @@ export default function Intro() {
             strings: ["Full Stack Developer"],
         })
 
+
+
+        
     },[])
 
+    const saveFile = () => {
+        saveAs("./assets/resume.pdf",
+          "resume.pdf"
+         )};
+
+
+
+
     return(
-        <div className="intro" id="intro">
+        <><div className="intro" id="intro">
             <div className="left">
-            <div className="imgContainer">
-                <img src="assets/scn.png" alt="Savannah Clarke smiling"/>
+                <div className="imgContainer">
+                    <img src="assets/scn.png" alt="Savannah Clarke smiling" />
                 </div>
             </div>
-            
+
             <div className="right">
                 <div className="wrapper">
                     <h2>Hello, I'm</h2>
@@ -32,7 +45,9 @@ export default function Intro() {
             </div>
 
 
-        </div>
+        </div><div>
+                <button onClick={saveFile}>My Resume</button>
+            </div></>
 
     )
 
