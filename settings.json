@@ -1,4 +1,8 @@
-{
+[{
     "editor.bracketPairColorization.enabled": true,
     "editor.guides.bracketPairs":"active"
-}
+},
+
+{
+    "no-use-before-define": ["error", { "functions": true, "classes": true, "variables": true }]
+}]
