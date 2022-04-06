@@ -32,31 +32,30 @@ export default function Portfolio() {
        
     ];
 
-useEffect(() =>{
+useEffect(() => {
 
-    switch(selected){
+    switch (selected) {
         case "featured":
-        setData(featured);
-        break;
+            setData(featured);
+                break;
         case "two":
-        setData(two);
-        break;
+            setData(two);
+                break;
         case "three":
-        setData(three);
-        break;
+            setData(three);
+                break;
         case "four":
-        setData(four);
-        break;
+            setData(four);
+                break;
         case "five":
-        setData(five);
-        break;
+            setData(five);
+                break;
         case "six":
-        setData(six);
-        break;
+            setData(six);
+            break;
+            default:
     }
-
-
-}, [selected])
+}, [selected]);
 
 
     return(
@@ -73,30 +72,17 @@ useEffect(() =>{
                 ))}
             </ul>
             <div className="container">
-                <div className="item">
-                    <img src="" alt=""/>
-                    <h3>Banking App</h3>
-                </div>
-                <div className="item">
-                    <img src="" alt=""/>
-                    <h3>Banking App</h3>
-                </div>
-                <div className="item">
-                    <img src="" alt=""/>
-                    <h3>Banking App</h3>
-                </div>
-                <div className="item">
-                    <img src="" alt=""/>
-                    <h3>Banking App</h3>
-                </div>
-                <div className="item">
-                    <img src="" alt=""/>
-                    <h3>Banking App</h3>
-                </div>
-                <div className="item">
-                    <img src="" alt=""/>
-                    <h3>Banking App</h3>
-                </div>
+                {data.map (data => (
+                 <div className="item">
+                 <img 
+                 src={data.img} 
+                 alt=""/>
+                 <h3>{data.title}</h3>
+             </div>   
+                ))}
+                
+                
+              
             </div>
 
         </div>
