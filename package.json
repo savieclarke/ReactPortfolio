@@ -1,4 +1,11 @@
 {
+  
+    "name": "my-app",
+    "version": "0.1.0",
+    "private": true,
+    "homepage": "https://myusername.github.io/my-app"
+  ,
+
   "dependencies": {
     "deploy": "^1.0.3",
     "file-saver": "^2.0.5",
@@ -8,5 +15,15 @@
     "react-dom": "^18.0.0",
     "react-scripts": "^2.1.3",
     "sass": "^1.49.11"
+  },
+
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build"
   }
+
+ 
+
 }
